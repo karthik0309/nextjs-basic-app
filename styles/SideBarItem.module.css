@@ -1,0 +1,54 @@
+.sidebar__item{
+    width: 20vw;
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.54);;
+    font-family: 'Poppins', sans-serif;    
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s ease-in;
+    z-index: 1;
+    position: relative;
+}
+
+.sidebar__icon{
+    margin-left: 8px;
+}
+
+.sidebar__title{
+    margin-left: 30px;
+}
+
+.sidebar__item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3F0E40;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+}
+
+.sidebar__item:focus::before,
+.sidebar__item:hover::before{
+    transform: scaleX(1);
+}
+
+.sidebar__item:hover,
+.sidebar__item:focus{
+    color: white;
+}
+
+@media(max-width:800px){
+    .sidebar__item{
+        width: 80vw;
+        margin-left: 10vw;
+        font-size: larger;
+    } 
+}
