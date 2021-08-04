@@ -15,7 +15,6 @@ const Home=()=>{
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"></link>
-        <script src="https://kit.fontawesome.com/2831bef4b7.js" ></script>
       </Head>
       <InputFilter/>
       <SearchTable/>
